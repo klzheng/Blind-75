@@ -33,20 +33,21 @@ var containsDuplicate = function(nums) {
 
 
 // ~~~~~~~~~~~~~~~~ OPTIMIZED ~~~~~~~~~~~~~~~~~~~~~
-// initialize empty object
+// initialize empty hashset
 // loop through nums arr
-// check if number is in object 
+// check if number is in hashset
 //      if true -> return true
-//      if false -> create an key-value pair with the number inside object
+//      if false -> add num to hashset
 // return false (if loop ends without returning true)
+
 
 var containsDuplicate = function(nums) {
 
-    const duplicates = {}
+    const duplicates = new Set()
     
     for (let i = 0; i < nums.length; i++) {
-        if (nums[i] in duplicates) return true
-        else duplicates[nums[i]] = true
+        if (duplicates.has(nums[i])) return true
+        duplicates.add(nums[i])
     }
     return false
 };
