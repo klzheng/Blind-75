@@ -11,9 +11,10 @@
 
 // turn string to lowercase
 // initialize starting pointer, ending pointer
-// while loop until starting pointer === ending pointer
-//      if "a".charCodeAt(0) - string.charCodeAt(pointer) < 0 || > 25, pointer++ / pointer--, continue
+// while loop (starting pointer < ending pointer)
+//      if string.charCodeAt(pointer) not in range of a number or lowercase letter, pointer++ / pointer--, continue
 //      if string(pointer) !== string(pointer2) return false
+//      otherwise increment/decrement both pointers
 // return true
 
 
