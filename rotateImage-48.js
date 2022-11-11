@@ -10,7 +10,7 @@
 
 
 // loop through the rows
-//      loop through cols where it starts at row
+//      loop through cols starting at row
 //          swap the element values
 // loop through the rows of matrix
 //      reverse each row
