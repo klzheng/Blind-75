@@ -49,6 +49,7 @@ var mergeTwoLists = function (list1, list2) {
 // loop ends if either list1 OR list2 are null, so we have to check if the other list is null 
 // check if list1 still has nodes, if so, tail.next = list1
 // check if list2 still has nodes, if so, tail.next = list2
+// return dummy.next (b/c when we created a new linked list, it initialized with a value of 0 so we want to get all the nodes after the 1st node)
 
 
 var mergeTwoLists = function (list1, list2) {
