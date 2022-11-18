@@ -39,6 +39,7 @@ var singleNumber = function(nums) {
 
 
 
+
 // ~~~~~ OPTIMAL ~~~~~~
 // initialize result var
 // loop through nums
